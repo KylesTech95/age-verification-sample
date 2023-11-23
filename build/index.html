@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en m-0 p-0 box-border">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/query.css">
+    <title>Basic Form 2</title>
+</head>
+<body class="bg-current flex flex-col justify-start items-center h-screen w-screen text-2xl mt-4" onload="unload()">
+    <!--Background banner-->
+    <div class="title-container text-[13rem] w-screen h-screen absolute overflow-hidden z-0 pointer-events-none">
+        <div class="relative-container relative gap-64 w-full h-screen duration-3000">
+            <span class="opacity-70 banner relief relief-banner banner-relief text-pink-400 duration-1000 ease animate-pulse absolute">No</span>
+            <span class="opacity-70 banner relief relief-banner banner-relief text-pink-400 duration-1000 ease animate-pulse absolute">Strings</span>
+            <span class="opacity-70 banner relief relief-banner banner-relief text-pink-400 duration-1000 ease animate-pulse absolute">Attached</span>
+        </div>  
+    </div>
+    
+    <div id="disclaimer">
+        <h2 class="age-title text-lime-500 text-[2rem] mb-2 opacity-0 duration-1000 pt-4">You must be 18 years or older to enter</h2>
+    </div>
+    <div class="wrapper py-4 px-20 border-2 rounded-md mt-8 opacity-0 duration-1000"><!--border-->
+        <form action="index.html" id="form" class="form-actual z-50 flex flex-col items-center justify-center gap-2">
+            <label for="age" class="age text-lime-500" name="age">Age</label>
+            <input type="number" required class="age-input text-center" name="age" min="0" max="110">
+            <button type="submit" class="text-gray-400 hover:text-lime-400 py-2 px-4 border-2 rounded-md duration-200">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
